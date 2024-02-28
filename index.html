@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation App</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://kit.fontawesome.com/1803e819c3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    
+        <form action="/" method="post" class="container">
+            <i class="fa-sharp fa-solid fa-paper-plane icon"></i>
+            <div >
+                <label for="fullName">Full Name</label>
+                <input type="text" name="fullName" id="fullName" placeholder="Enter your name" />
+                <div class="reminder reminder-fname"></div>
+            </div>
+            <div >
+                <label for="mobileNo">Mobile No.</label>
+                <input type="text" id="mobileNo" name="mobileNo" placeholder="123 456 7890" />
+                <div class="reminder reminder-mNo"></div>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter email" />
+                <div class="reminder reminder-email"></div>
+            </div>
+            <div>
+                <label for="message" id="messageLabel">Your Message</label>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter your message"></textarea>
+                <div class="reminder reminder-mssg"></div>
+            </div>
+            <div class="submit">
+                <input type="submit" value="Submit" id="submit"/>
+            </div>
+            
+        
+        </form>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
